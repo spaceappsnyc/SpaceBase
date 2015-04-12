@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html data-ng-app="spacebase">
+	<head>
+		<title>SpaceBase</title>
+		<link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css" />
+
+		<!-- build:css styles/styles.css -->
+		<link rel="stylesheet" type="text/css", href="styles/site.css" />
+		<!-- endbuild -->
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link href="http://fonts.googleapis.com/css?family=Lato:400,300italic,400bold" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="assets/css/normalize.css" />
+		<link rel="stylesheet" href="assets/css/animate.css" />
+		<link rel="stylesheet" href="assets/css/styles.css" />
+	</head>
+	<body>
+
+	<!-- build:js scripts/vendor.js -->
+	<script type="text/javascript" src="scripts/vendor/jquery.js"></script>
+	<script type="text/javascript" src="scripts/vendor/angular.js"></script>
+	<script type="text/javascript" src="scripts/vendor/heatmap.js"></script>
+	<script type="text/javascript" src="scripts/vendor/smooth.js"></script>
+	<script type="text/javascript" src="scripts/vendor/math.js"></script>
+	<!-- endbuild -->
+
+	<!-- build:js scripts/spacebase.js -->
+	<script type="text/javascript" src="scripts/app.js"></script>
+	<script type="text/javascript" src="scripts/data.service.js"></script>
+	<script type="text/javascript" src="scripts/heatmap/heatmap.directive.js"></script>
+	<!-- endbuild -->
+
+	  <!-- Our super awesome changing header! -->
+	  <!-- <nav class="fixed">
+	    <div class="midnightHeader default">
+	      <div class="logo-holder">
+	        <a class="logo"><span class="screenreader"></span></a>
+	      </div>
+	    </div>
+	  </nav> -->
+
+
+	  <!-- <div class="top-links" data-midnight="white">
+	    <a class="button" href="https://aerolab.github.io/midnight.js/midnight.jquery.min.js" download>Download</a>
+	    <a class="button button-github" href="https://github.com/Aerolab/midnight.js" target="_blank">Fork on GitHub</a>
+	  </div> -->
+
+
+	  <div class="first-background" data-midnight="white">
+	    <!-- Hi! -->
+	  </div>
+
+
+	  <header data-midnight="black">
+
+	    <div class="container">
+
+	      <h1 class="wow fadeInUp">Spacebase lets you visualize location-based sensor data on the fly</h1>
+
+	      <div class="scroll-prompt wow fadeInUp"></div>
+
+	      <figure id="space-island">
+	        <img class="wow fadeInUp" src="assets/css/images/space-island.jpg" />
+	      </figure>
+	    </div>
+
+	  </header>
+
+
+	  <section class="step step-one" data-midnight="blue">
+
+	    <div class="container">
+	      <div class="instructions wow fadeInLeft">
+	        <h2>The Idea</h2>
+	        <p>Knowing when critical environmental-control systems are failing in a close environment is very important</p>
+	        <p>Spacebase was conceived to provide a visualization of heat and light data in a closed environment, like a space shuttle</p>
+	      </div>
+	    </div>
+
+	  </section>
+
+
+	  <section class="step step-two" data-midnight="light">
+
+	    <div class="container">
+	      <div class="instructions wow fadeInLeft">
+	        <h2>The Data</h2>
+	        <p>Spacebase uses the Intel Edison board with temperature and light sensors for real-time data collection</p>
+	        <p>However, in the future, Spacebase will also accept arbitrary location-based data for visualization</p>
+	      </div>
+	    </div>
+
+	  </section>
+
+
+	  <section class="step step-three" data-midnight="dark">
+
+	    <div class="container">
+	      <div class="instructions wow fadeInLeft">
+	        <h2>The Application</h2>
+	        <p>The Spacebase application is built in Python Flask and AngularJS</p>
+	        <p>Spacebase is currently deployed to the Microsoft Azure Cloud to ensure high-availability</p>
+	      </div>
+	    </div>
+
+	  </section>
+
+
+
+	  <section class="step step-four full-height" data-midnight="lighter">
+
+	    <div class="container">
+	      <div class="instructions wow fadeInLeft">
+	        <h2>How It Looks</h2>
+	        <p>Our current visualization is a heatmap that plots the intensity of data readings</p>
+	      </div>
+      	<img class="wow fadeInUp" src="assets/images/heatmap.png" height="250" width="250" />
+	    </div>
+
+	  </section>
+
+
+<!-- 	  <section class="step step-five full-height" data-midnight="white">
+
+	    <div class="container">
+
+	      <div class="instructions wow fadeInLeft">
+	        <h2>Further customization</h2>
+	        <p>Want to use custom markup for each header?</p>
+	        <p>You just need to add a div with the class <em>.midnightHeader.default</em> inside your header, as well as any other custom headers you want.</p>
+	        <p>For instance the "butterflies" section will use the .midnightHeader.butterflies header, and any other ones will just use the markup from .midnightHeader.default.</p>
+	      </div>
+
+
+	      <pre class="line-numbers wow fadeInRight"><code class="language-markup">&lt;nav class="fixed"&gt;
+	  &lt;!-- Your standard header --&gt;
+	  &lt;div class="midnightHeader default"&gt;
+	    &lt;a class="logo"&gt;Logo&lt;/a&gt;
+	  &lt;/div&gt;
+
+	  &lt;!-- A header with butterflies --&gt;
+	  &lt;div class="midnightHeader butterflies"&gt;
+	    &lt;a class="logo"&gt;Logo&lt;/a&gt;
+	    &lt;span class="a-butterfly"&gt;&lt;/span&gt;
+	    &lt;span class="another-butterfly"&gt;&lt;/span&gt;
+	  &lt;/div&gt;
+	&lt;/nav&gt;</code></pre>
+
+	    </div>
+
+	  </section> -->
+
+
+
+	  <footer class="footer" data-midnight="full">
+
+
+	    <div class="illustration-city">
+	    <!-- 
+	      <div class="container">
+	        <div class="buttons wow fadeIn">
+	          <a class="button" href="https://aerolab.github.io/midnight.js/midnight.jquery.min.js" download>Download</a>
+	          <a class="button" href="https://github.com/Aerolab/midnight.js" target="_blank"><i class="icon-github"></i> Fork on GitHub</a>
+	        </div>
+	      </div> -->
+
+	      <!-- <div class="signature">
+	        <a href="http://aerolab.co" target="_blank" class="signature-aerolab"><span class="screenreader">by Aerolab</span></a>
+	      </div> -->
+
+	    </div>
+
+	  </footer>
+
+
+	  <script src="assets/js/jquery-1.11.1.min.js"></script>
+	  <script src="assets/js/sscr.min.js"></script>
+	  <script src="assets/js/prism.js"></script>
+	  <script src="assets/js/wow.min.js"></script>
+	  <script src="assets/js/viewport-units-buggyfill.js"></script>
+	  <script src="midnight.jquery.min.js"></script>
+	  <script>
+
+
+
+	    $(document).ready(function(){
+	      // vh fix for iOS7 (Not that it works well on that anyway)
+	      viewportUnitsBuggyfill.init();
+
+	      $(window).resize(function(){
+	        viewportUnitsBuggyfill.refresh();
+	      });
+
+	      // Start Midnight!
+	      $('nav.fixed').midnight();
+
+	      // Start wow.js
+	      new WOW().init();
+
+	      // The island disappears when the logo moves on top of it
+	      var $island = $('#space-island');
+	      var islandTop = $island.offset().top;
+	      var windowHeight = $(window).height();
+
+	      $(window).resize(function(){
+	        islandTop = $island.offset().top;
+	        windowHeight = $(window).height();
+	      });
+
+	      $(document).scroll(function(){
+	        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+	        var minScrollTop = islandTop - windowHeight * 0.4;
+	        var maxScrollTop = islandTop;
+
+	        // Opacity goes from 1.0 at the bottom 2/3 of the screen to 0.4 at the top
+	        if( scrollTop <= islandTop*2 ) {
+	          var targetOpacity = 1.0;
+	          var minOpacity = 0.4;
+
+	          if( scrollTop > minScrollTop && scrollTop < maxScrollTop ) {
+	            targetOpacity = ((maxScrollTop - scrollTop) / (maxScrollTop - minScrollTop)) * (1.0 - minOpacity) + minOpacity;
+	          }
+	          else if( scrollTop > maxScrollTop ) {
+	            targetOpacity = minOpacity;
+	          }
+	          else if( scrollTop < minScrollTop ) {
+	            targetOpacity = 1.0;
+	          }
+
+	          $island.css('opacity', targetOpacity);
+	        }
+
+	      });
+
+	      $('.scroll-prompt').click(function(event){
+	        event.preventDefault();
+	        $('html, body').animate({
+	          scrollTop: $("section.step-one").offset().top - $('nav').height() * 0.5
+	        }, 1000, 'swing');
+	      });
+
+	      $(window).trigger('resize');
+
+	    });
+	  </script>
+
+	</body>
+</html>

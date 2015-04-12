@@ -1,0 +1,17 @@
+{
+  "name": "hackathon2015",
+  "version": "1.0.0",
+  "description": "edison + watson project",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.12.3",
+    "mysql": "^2.6.1",
+    "sequelize": "^2.0.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mikhail Gorbachev",
+  "license": "ISC"
+}
